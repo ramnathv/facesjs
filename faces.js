@@ -368,8 +368,8 @@
      * @param {string|Object=} container Either the DOM element of the div that the face will appear in, or a string containing its id. If not given, no face is drawn and the face object is simply returned.
      * @return {Object} Randomly generated face object.
      */
-    function generate(container) {
-        Math.seedrandom('This is my seed string');
+    function generate(container, seed) {
+        Math.seedrandom(seed);
         var angle, colors, face, flip, id;
 
         face = {head: {}, eyebrows: [{}, {}], eyes: [{}, {}], nose: {}, mouth: {}, hair: {}};
