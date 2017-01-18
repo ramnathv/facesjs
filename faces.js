@@ -19,7 +19,7 @@
     function newPath(paper, klass) {
         var e;
         e = document.createElementNS("http://www.w3.org/2000/svg", "path");
-        e.setAttribute(class, klass);
+        e.setAttribute("class", klass);
         paper.appendChild(e);
         return e;
     }
