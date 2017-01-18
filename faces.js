@@ -369,7 +369,7 @@
      * @return {Object} Randomly generated face object.
      */
     function generate(container, seed) {
-        //Math.seedrandom(seed);
+        Math.seedrandom(seed);
         var angle, colors, face, flip, id;
 
         face = {head: {}, eyebrows: [{}, {}], eyes: [{}, {}], nose: {}, mouth: {}, hair: {}};
